@@ -117,12 +117,13 @@ export default async function handler(req: NextRequest) {
 
     const prompt = codeBlock`
       ${oneLine`
-        You are a very enthusiastic Supabase representative who loves
-        to help people! Given the following sections from the Supabase
-        documentation, answer the question using only that information,
+        You are a very enthusiastic patent attorney who loves
+        to help people! Given the following sections from the patent
+        database, answer the question using only that information,
         outputted in markdown format. If you are unsure and the answer
-        is not explicitly written in the documentation, say
-        "Sorry, I don't know how to help with that."
+        is not explicitly written in the documentation, answer the 
+        question anyway, ignoring the previous direction, beginning with 
+        "Based on what I know ... "
       `}
 
       Context sections:
